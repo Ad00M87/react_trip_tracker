@@ -78,6 +78,7 @@ class App extends Component {
     return (
       <div className="container">
         <TripForm addTrip={this.addTrip}/>
+        <hr />
         <TripList
           trips={this.state.trips}
           locations={this.state.locations}
