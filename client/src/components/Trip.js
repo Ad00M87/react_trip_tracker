@@ -45,7 +45,7 @@ class Trip extends React.Component {
       return(
         <div>
           <form
-            className="col l4"
+            className="col s12"
             onSubmit={this.handleSubmit}
           >
             <input
@@ -63,12 +63,12 @@ class Trip extends React.Component {
       )
     } else {
       return(
-        <div>
+        <div className="card blue-grey lighten-3">
           <h3>{this.props.name}</h3>
           { this.state.show ?
-            <div>
+            <div className="col s12">
               <form
-                className="col s4"
+                className="col s12"
                 onSubmit={this.handleSubmitLocation}
               >
                 <div className="row">

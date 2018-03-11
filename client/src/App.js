@@ -54,7 +54,6 @@ class App extends Component {
   }
 
   addLocation = (location) => {
-    debugger
     axios.post(`/api/trips/${location.trip_id}/locations`, location)
       .then( res => {
         this.setState({ locations: [res.data, ...this.state.locations]})
@@ -78,7 +77,6 @@ class App extends Component {
     return (
       <div className="container">
         <TripForm addTrip={this.addTrip}/>
-        <hr />
         <TripList
           trips={this.state.trips}
           locations={this.state.locations}
